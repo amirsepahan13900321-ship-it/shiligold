@@ -1,0 +1,24 @@
+{
+  "name": "shayli-gold",
+  "version": "1.0.0",
+  "description": "فروشگاه آنلاین شایلی طلا و جواهرات",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node server/server.js"
+  },
+  "keywords": [
+    "gold",
+    "jewelry",
+    "shayli",
+    "shop",
+    "iran"
+  ],
+  "author": "Shayli Gold",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "express": "^5.1.0",
+    "sqlite3": "^5.1.7"
+  }
+}

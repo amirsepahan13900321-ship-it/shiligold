@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="سفارش‌های من در فروشگاه شایلی طلا و جواهرات."
+    >
+
+    <title>سفارش‌های من | شایلی</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header">
+
+    <div class="container header-inner">
+
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+
+            شایلی
+
+            <span>
+                طلا و جواهرات
+            </span>
+
+        </a>
+
+
+        <nav
+            class="main-nav"
+            data-main-nav
+        >
+
+            <a href="index.html">
+                خانه
+            </a>
+
+            <a href="shop.html">
+                فروشگاه
+            </a>
+
+            <a href="categories.html">
+                دسته‌بندی‌ها
+            </a>
+
+            <a href="about.html">
+                درباره ما
+            </a>
+
+            <a href="contact.html">
+                تماس با ما
+            </a>
+
+        </nav>
+
+
+        <div class="header-search">
+
+            <input
+                type="search"
+                placeholder="جستجوی محصول..."
+                data-search-input
+                aria-label="جستجوی محصول"
+            >
+
+            <button
+                type="button"
+                data-search-button
+                aria-label="جستجو"
+            >
+                🔍
+            </button>
+
+        </div>
+
+
+        <div class="header-actions">
+
+            <a
+                href="favorites.html"
+                class="header-action"
+                title="علاقه‌مندی‌ها"
+            >
+
+                ♡
+
+                <span
+                    class="action-count"
+                    data-favorite-count
+                >
+                    ۰
+                </span>
+
+            </a>
+
+
+            <a
+                href="account.html"
+                class="header-action active"
+                title="حساب کاربری"
+            >
+                👤
+            </a>
+
+
+            <a
+                href="cart.html"
+                class="header-action"
+                title="سبد خرید"
+            >
+
+                🛒
+
+                <span
+                    class="action-count"
+                    data-cart-count
+                >
+                    ۰
+                </span>
+
+            </a>
+
+
+            <button
+                type="button"
+                class="mobile-menu-button"
+                data-mobile-menu
+                aria-label="باز کردن منو"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     PAGE HEADER
+===================================================== -->
+
+<section class="page-header">
+
+    <div class="container">
+
+        <span class="section-subtitle">
+            حساب کاربری
+        </span>
+
+        <h1>
+            سفارش‌های من
+        </h1>
+
+        <p>
+            مشاهده و پیگیری سفارش‌های ثبت‌شده
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ORDERS
+===================================================== -->
+
+<main>
+
+<section class="section">
+
+    <div class="container">
+
+
+        <div class="orders-page">
+
+
+            <!-- عنوان -->
+
+            <div class="section-heading">
+
+                <span class="section-subtitle">
+                    تاریخچه خرید
+                </span>
+
+                <h2>
+                    سفارش‌های شما
+                </h2>
+
+            </div>
+
+
+            <!-- لیست سفارش‌ها -->
+
+            <div
+                id="ordersList"
+                class="orders-list"
+            >
+
+                <!-- سفارش‌ها توسط JavaScript نمایش داده می‌شوند -->
+
+                <div class="empty-state">
+
+                    <div class="empty-state-icon">
+                        📦
+                    </div>
+
+                    <h3>
+                        هنوز سفارشی ثبت نکرده‌اید
+                    </h3>
+
+                    <p>
+                        بعد از ثبت سفارش، اطلاعات آن در این قسمت نمایش داده می‌شود.
+                    </p>
+
+                    <a
+                        href="shop.html"
+                        class="btn btn-primary"
+                    >
+                        مشاهده فروشگاه
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+
+        <div class="footer-column">
+
+            <h3>
+                شایلی
+            </h3>
+
+            <p>
+                فروشگاه آنلاین طلا و جواهرات
+                با طراحی مدرن و لوکس.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                دسترسی سریع
+            </h3>
+
+            <a href="index.html">
+                خانه
+            </a>
+
+            <a href="shop.html">
+                فروشگاه
+            </a>
+
+            <a href="categories.html">
+                دسته‌بندی‌ها
+            </a>
+
+            <a href="about.html">
+                درباره ما
+            </a>
+
+            <a href="contact.html">
+                تماس با ما
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                پشتیبانی
+            </h3>
+
+            <a href="rules.html">
+                قوانین و مقررات
+            </a>
+
+            <a href="faq.html">
+                سوالات متداول
+            </a>
+
+            <a href="orders.html">
+                پیگیری سفارش
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                تماس با ما
+            </h3>
+
+            <p>
+                📞 09920229942
+            </p>
+
+            <p>
+                ✉️ amir.sepahan13900321@gmail.com
+            </p>
+
+            <p>
+                📍 فلاورجان
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            ©
+            <span data-current-year>
+                ۱۴۰۵
+            </span>
+            شایلی طلا و جواهرات
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     SCRIPTS
+===================================================== -->
+
+<script src="js/products.js"></script>
+
+<script src="js/cart.js"></script>
+
+<script src="js/favorites.js"></script>
+
+<script src="js/auth.js"></script>
+
+<script src="js/checkout.js"></script>
+
+<script src="js/api.js"></script>
+
+<script src="js/script.js"></script>
+
+
+<!-- =====================================================
+     ORDERS PAGE SCRIPT
+===================================================== -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const ordersList =
+        document.getElementById("ordersList");
+
+    if (!ordersList) {
+        return;
+    }
+
+
+    const currentUser =
+        typeof getCurrentUser === "function"
+            ? getCurrentUser()
+            : null;
+
+
+    if (!currentUser) {
+
+        ordersList.innerHTML = `
+
+            <div class="empty-state">
+
+                <div class="empty-state-icon">
+                    🔐
+                </div>
+
+                <h3>
+                    ابتدا وارد حساب خود شوید
+                </h3>
+
+                <p>
+                    برای مشاهده سفارش‌های خود باید وارد حساب کاربری شوید.
+                </p>
+
+                <a
+                    href="login.html"
+                    class="btn btn-primary"
+                >
+                    ورود به حساب
+                </a>
+
+            </div>
+
+        `;
+
+        return;
+    }
+
+
+    const orders =
+        typeof getOrders === "function"
+            ? getOrders()
+            : [];
+
+
+    const userOrders =
+        orders.filter(function (order) {
+
+            return order.customer &&
+                   order.customer.email === currentUser.email;
+
+        });
+
+
+    if (!userOrders.length) {
+
+        ordersList.innerHTML = `
+
+            <div class="empty-state">
+
+                <div class="empty-state-icon">
+                    📦
+                </div>
+
+                <h3>
+                    هنوز سفارشی ندارید
+                </h3>
+
+                <p>
+                    می‌توانید محصولات مورد علاقه خود را از فروشگاه انتخاب کنید.
+                </p>
+
+                <a
+                    href="shop.html"
+                    class="btn btn-primary"
+                >
+                    مشاهده فروشگاه
+                </a>
+
+            </div>
+
+        `;
+
+        return;
+    }
+
+
+    ordersList.innerHTML =
+        userOrders
+            .slice()
+            .reverse()
+            .map(function (order) {
+
+                const date =
+                    order.createdAt
+                        ? new Date(order.createdAt).toLocaleDateString("fa-IR")
+                        : "-";
+
+
+                const total =
+                    typeof formatPrice === "function"
+                        ? formatPrice(order.total)
+                        : Number(order.total || 0).toLocaleString("fa-IR");
+
+
+                let statusText =
+                    "در انتظار بررسی";
+
+
+                if (order.status === "processing") {
+                    statusText = "در حال پردازش";
+                }
+
+                if (order.status === "shipped") {
+                    statusText = "ارسال شده";
+                }
+
+                if (order.status === "delivered") {
+                    statusText = "تحویل داده شده";
+                }
+
+                if (order.status === "cancelled") {
+                    statusText = "لغو شده";
+                }
+
+
+                return `
+
+                    <article class="order-card">
+
+
+                        <div class="order-card-header">
+
+                            <div>
+
+                                <span class="order-label">
+                                    شماره سفارش
+                                </span>
+
+                                <strong>
+                                    ${order.orderNumber || "-"}
+                                </strong>
+
+                            </div>
+
+
+                            <span class="order-status">
+                                ${statusText}
+                            </span>
+
+                        </div>
+
+
+                        <div class="order-card-info">
+
+                            <div>
+
+                                <span>
+                                    تاریخ ثبت
+                                </span>
+
+                                <strong>
+                                    ${date}
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <span>
+                                    تعداد کالا
+                                </span>
+
+                                <strong>
+                                    ${(order.items || []).length}
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <span>
+                                    مبلغ سفارش
+                                </span>
+
+                                <strong>
+                                    ${total}
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="order-card-footer">
+
+                            <span>
+                                وضعیت پرداخت:
+                                ${
+                                    order.paymentStatus === "paid"
+                                        ? "پرداخت شده"
+                                        : "در انتظار پرداخت"
+                                }
+                            </span>
+
+                        </div>
+
+
+                    </article>
+
+                `;
+
+            })
+            .join("");
+
+});
+
+</script>
+
+
+</body>
+
+</html>

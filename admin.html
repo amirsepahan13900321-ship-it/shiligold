@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="پنل مدیریت فروشگاه شایلی طلا و جواهرات."
+    >
+
+    <title>پنل مدیریت | شایلی</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header">
+
+    <div class="container header-inner">
+
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+
+            شایلی
+
+            <span>
+                پنل مدیریت
+            </span>
+
+        </a>
+
+
+        <nav
+            class="main-nav"
+            data-main-nav
+        >
+
+            <a href="index.html">
+                سایت
+            </a>
+
+            <a href="shop.html">
+                محصولات
+            </a>
+
+            <a href="orders.html">
+                سفارش‌ها
+            </a>
+
+            <a href="account.html">
+                حساب کاربری
+            </a>
+
+        </nav>
+
+
+        <div class="header-actions">
+
+            <a
+                href="index.html"
+                class="header-action"
+                title="بازگشت به سایت"
+            >
+                🏠
+            </a>
+
+
+            <button
+                type="button"
+                class="mobile-menu-button"
+                data-mobile-menu
+                aria-label="باز کردن منو"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     PAGE HEADER
+===================================================== -->
+
+<section class="page-header">
+
+    <div class="container">
+
+        <span class="section-subtitle">
+            مدیریت فروشگاه
+        </span>
+
+        <h1>
+            پنل مدیریت شایلی
+        </h1>
+
+        <p>
+            مدیریت محصولات، سفارش‌ها و کاربران فروشگاه
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ADMIN
+===================================================== -->
+
+<main>
+
+<section class="section">
+
+    <div class="container">
+
+
+        <!-- =================================================
+             ADMIN WARNING
+        ================================================= -->
+
+        <div class="admin-warning">
+
+            <strong>
+                ⚠️ توجه
+            </strong>
+
+            <p>
+                این پنل در نسخه فعلی برای مدیریت اولیه و آزمایشی
+                سمت مرورگر طراحی شده است. برای استفاده واقعی،
+                احراز هویت امن و اتصال به سرور و پایگاه داده باید
+                فعال شود.
+            </p>
+
+        </div>
+
+
+
+        <!-- =================================================
+             STATISTICS
+        ================================================= -->
+
+        <div class="admin-stats">
+
+
+            <div class="admin-stat-card">
+
+                <div class="admin-stat-icon">
+                    📦
+                </div>
+
+                <div>
+
+                    <span>
+                        محصولات
+                    </span>
+
+                    <strong id="adminProductCount">
+                        ۰
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="admin-stat-card">
+
+                <div class="admin-stat-icon">
+                    🛒
+                </div>
+
+                <div>
+
+                    <span>
+                        سفارش‌ها
+                    </span>
+
+                    <strong id="adminOrderCount">
+                        ۰
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="admin-stat-card">
+
+                <div class="admin-stat-icon">
+                    👥
+                </div>
+
+                <div>
+
+                    <span>
+                        کاربران
+                    </span>
+
+                    <strong id="adminUserCount">
+                        ۰
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="admin-stat-card">
+
+                <div class="admin-stat-icon">
+                    💰
+                </div>
+
+                <div>
+
+                    <span>
+                        مجموع سفارش‌ها
+                    </span>
+
+                    <strong id="adminSalesTotal">
+                        ۰ تومان
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             PRODUCTS
+        ================================================= -->
+
+        <div class="admin-section">
+
+
+            <div class="admin-section-header">
+
+                <div>
+
+                    <span class="section-subtitle">
+                        مدیریت کالا
+                    </span>
+
+                    <h2>
+                        محصولات
+                    </h2>
+
+                </div>
+
+
+                <a
+                    href="shop.html"
+                    class="btn btn-outline"
+                >
+                    مشاهده فروشگاه
+                </a>
+
+            </div>
+
+
+            <div
+                id="adminProducts"
+                class="admin-table-wrapper"
+            >
+
+                <p>
+                    در حال بارگذاری محصولات...
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             ORDERS
+        ================================================= -->
+
+        <div class="admin-section">
+
+
+            <div class="admin-section-header">
+
+                <div>
+
+                    <span class="section-subtitle">
+                        مدیریت فروش
+                    </span>
+
+                    <h2>
+                        سفارش‌های اخیر
+                    </h2>
+
+                </div>
+
+
+                <a
+                    href="orders.html"
+                    class="btn btn-outline"
+                >
+                    مشاهده سفارش‌ها
+                </a>
+
+            </div>
+
+
+            <div
+                id="adminOrders"
+                class="admin-table-wrapper"
+            >
+
+                <p>
+                    در حال بارگذاری سفارش‌ها...
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             USERS
+        ================================================= -->
+
+        <div class="admin-section">
+
+
+            <div class="admin-section-header">
+
+                <div>
+
+                    <span class="section-subtitle">
+                        کاربران
+                    </span>
+
+                    <h2>
+                        کاربران ثبت‌نام‌شده
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="adminUsers"
+                class="admin-table-wrapper"
+            >
+
+                <p>
+                    در حال بارگذاری کاربران...
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             MARKET PRICE
+        ================================================= -->
+
+        <div class="admin-section">
+
+
+            <div class="admin-section-header">
+
+                <div>
+
+                    <span class="section-subtitle">
+                        بازار
+                    </span>
+
+                    <h2>
+                        قیمت‌های بازار
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="admin-market-grid">
+
+
+                <div class="admin-market-card">
+
+                    <h3>
+                        طلای ۱۸ عیار
+                    </h3>
+
+                    <input
+                        type="number"
+                        id="adminGoldPrice"
+                        placeholder="قیمت هر گرم"
+                        min="0"
+                    >
+
+                    <button
+                        type="button"
+                        class="btn btn-primary"
+                        id="saveGoldPrice"
+                    >
+                        ذخیره قیمت
+                    </button>
+
+                </div>
+
+
+                <div class="admin-market-card">
+
+                    <h3>
+                        دلار
+                    </h3>
+
+                    <input
+                        type="number"
+                        id="adminDollarPrice"
+                        placeholder="قیمت دلار"
+                        min="0"
+                    >
+
+                    <button
+                        type="button"
+                        class="btn btn-primary"
+                        id="saveDollarPrice"
+                    >
+                        ذخیره قیمت
+                    </button>
+
+                </div>
+
+
+            </div>
+
+
+            <div
+                id="adminMarketMessage"
+                class="form-message"
+                aria-live="polite"
+            ></div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             QUICK LINKS
+        ================================================= -->
+
+        <div class="admin-section">
+
+
+            <div class="admin-section-header">
+
+                <div>
+
+                    <span class="section-subtitle">
+                        دسترسی سریع
+                    </span>
+
+                    <h2>
+                        مدیریت سریع
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="admin-quick-links">
+
+
+                <a
+                    href="shop.html"
+                    class="admin-quick-link"
+                >
+
+                    <span>
+                        💎
+                    </span>
+
+                    <strong>
+                        فروشگاه
+                    </strong>
+
+                    <small>
+                        مشاهده محصولات
+                    </small>
+
+                </a>
+
+
+                <a
+                    href="orders.html"
+                    class="admin-quick-link"
+                >
+
+                    <span>
+                        📦
+                    </span>
+
+                    <strong>
+                        سفارش‌ها
+                    </strong>
+
+                    <small>
+                        پیگیری سفارش‌ها
+                    </small>
+
+                </a>
+
+
+                <a
+                    href="categories.html"
+                    class="admin-quick-link"
+                >
+
+                    <span>
+                        🗂️
+                    </span>
+
+                    <strong>
+                        دسته‌بندی‌ها
+                    </strong>
+
+                    <small>
+                        مشاهده دسته‌بندی‌ها
+                    </small>
+
+                </a>
+
+
+                <a
+                    href="contact.html"
+                    class="admin-quick-link"
+                >
+
+                    <span>
+                        📞
+                    </span>
+
+                    <strong>
+                        تماس
+                    </strong>
+
+                    <small>
+                        اطلاعات تماس
+                    </small>
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+
+        <div class="footer-column">
+
+            <h3>
+                شایلی
+            </h3>
+
+            <p>
+                فروشگاه آنلاین طلا و جواهرات
+                با طراحی مدرن و لوکس.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                دسترسی سریع
+            </h3>
+
+            <a href="index.html">
+                سایت اصلی
+            </a>
+
+            <a href="shop.html">
+                فروشگاه
+            </a>
+
+            <a href="orders.html">
+                سفارش‌ها
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                پشتیبانی
+            </h3>
+
+            <a href="rules.html">
+                قوانین و مقررات
+            </a>
+
+            <a href="faq.html">
+                سوالات متداول
+            </a>
+
+            <a href="contact.html">
+                تماس با ما
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                تماس با ما
+            </h3>
+
+            <p>
+                📞 09920229942
+            </p>
+
+            <p>
+                ✉️ amir.sepahan13900321@gmail.com
+            </p>
+
+            <p>
+                📍 فلاورجان
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            ©
+            <span data-current-year>
+                ۱۴۰۵
+            </span>
+            شایلی طلا و جواهرات
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     SCRIPTS
+===================================================== -->
+
+<script src="js/products.js"></script>
+
+<script src="js/cart.js"></script>
+
+<script src="js/favorites.js"></script>
+
+<script src="js/auth.js"></script>
+
+<script src="js/api.js"></script>
+
+<script src="js/script.js"></script>
+
+
+
+<!-- =====================================================
+     ADMIN SCRIPT
+===================================================== -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+    /* =================================================
+       HELPERS
+    ================================================= */
+
+    function formatNumber(value) {
+
+        return Number(value || 0)
+            .toLocaleString("fa-IR");
+
+    }
+
+
+    function formatPrice(value) {
+
+        return formatNumber(value) + " تومان";
+
+    }
+
+
+
+    /* =================================================
+       PRODUCTS
+    ================================================= */
+
+    const products =
+        Array.isArray(window.SHAILY_PRODUCTS)
+            ? window.SHAILY_PRODUCTS
+            : [];
+
+
+    const productCount =
+        document.getElementById("adminProductCount");
+
+
+    if (productCount) {
+
+        productCount.textContent =
+            products.length.toLocaleString("fa-IR");
+
+    }
+
+
+    const productsContainer =
+        document.getElementById("adminProducts");
+
+
+    if (productsContainer) {
+
+
+        if (!products.length) {
+
+            productsContainer.innerHTML = `
+
+                <div class="empty-state">
+
+                    <div class="empty-state-icon">
+                        📦
+                    </div>
+
+                    <h3>
+                        محصولی وجود ندارد
+                    </h3>
+
+                    <p>
+                        هنوز محصولی در فایل محصولات ثبت نشده است.
+                    </p>
+
+                </div>
+
+            `;
+
+        } else {
+
+
+            productsContainer.innerHTML = `
+
+                <table class="admin-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                محصول
+                            </th>
+
+                            <th>
+                                دسته‌بندی
+                            </th>
+
+                            <th>
+                                وزن
+                            </th>
+
+                            <th>
+                                موجودی
+                            </th>
+
+                            <th>
+                                وضعیت
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        ${
+                            products.map(function (product) {
+
+                                return `
+
+                                    <tr>
+
+                                        <td>
+                                            ${product.name || "-"}
+                                        </td>
+
+                                        <td>
+                                            ${product.categoryName || "-"}
+                                        </td>
+
+                                        <td>
+                                            ${product.weight || 0}
+                                            گرم
+                                        </td>
+
+                                        <td>
+                                            ${formatNumber(product.stock)}
+                                        </td>
+
+                                        <td>
+
+                                            ${
+                                                product.active
+                                                    ? "فعال"
+                                                    : "غیرفعال"
+                                            }
+
+                                        </td>
+
+                                    </tr>
+
+                                `;
+
+                            }).join("")
+                        }
+
+                    </tbody>
+
+                </table>
+
+            `;
+
+        }
+
+    }
+
+
+
+    /* =================================================
+       ORDERS
+    ================================================= */
+
+    let orders = [];
+
+    try {
+
+        orders =
+            JSON.parse(
+                localStorage.getItem("shailyOrders")
+            ) || [];
+
+    } catch (error) {
+
+        orders = [];
+
+    }
+
+
+    const orderCount =
+        document.getElementById("adminOrderCount");
+
+
+    if (orderCount) {
+
+        orderCount.textContent =
+            orders.length.toLocaleString("fa-IR");
+
+    }
+
+
+    let totalSales = 0;
+
+
+    orders.forEach(function (order) {
+
+        totalSales += Number(order.total || 0);
+
+    });
+
+
+    const salesTotal =
+        document.getElementById("adminSalesTotal");
+
+
+    if (salesTotal) {
+
+        salesTotal.textContent =
+            formatPrice(totalSales);
+
+    }
+
+
+    const ordersContainer =
+        document.getElementById("adminOrders");
+
+
+    if (ordersContainer) {
+
+
+        if (!orders.length) {
+
+            ordersContainer.innerHTML = `
+
+                <div class="empty-state">
+
+                    <div class="empty-state-icon">
+                        📦
+                    </div>
+
+                    <h3>
+                        سفارشی ثبت نشده است
+                    </h3>
+
+                    <p>
+                        سفارش‌های ثبت‌شده در این قسمت نمایش داده می‌شوند.
+                    </p>
+
+                </div>
+
+            `;
+
+        } else {
+
+
+            ordersContainer.innerHTML = `
+
+                <table class="admin-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                شماره سفارش
+                            </th>
+
+                            <th>
+                                مشتری
+                            </th>
+
+                            <th>
+                                مبلغ
+                            </th>
+
+                            <th>
+                                وضعیت
+                            </th>
+
+                            <th>
+                                پرداخت
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        ${
+                            orders
+                                .slice()
+                                .reverse()
+                                .slice(0, 10)
+                                .map(function (order) {
+
+                                    return `
+
+                                        <tr>
+
+                                            <td>
+                                                ${order.orderNumber || "-"}
+                                            </td>
+
+                                            <td>
+                                                ${
+                                                    order.customer &&
+                                                    order.customer.name
+                                                        ? order.customer.name
+                                                        : "-"
+                                                }
+                                            </td>
+
+                                            <td>
+                                                ${formatPrice(order.total)}
+                                            </td>
+
+                                            <td>
+                                                ${order.status || "pending"}
+                                            </td>
+
+                                            <td>
+                                                ${
+                                                    order.paymentStatus === "paid"
+                                                        ? "پرداخت شده"
+                                                        : "پرداخت نشده"
+                                                }
+                                            </td>
+
+                                        </tr>
+
+                                    `;
+
+                                })
+                                .join("")
+                        }
+
+                    </tbody>
+
+                </table>
+
+            `;
+
+        }
+
+    }
+
+
+
+    /* =================================================
+       USERS
+    ================================================= */
+
+    let users = [];
+
+    try {
+
+        users =
+            JSON.parse(
+                localStorage.getItem("shailyUsers")
+            ) || [];
+
+    } catch (error) {
+
+        users = [];
+
+    }
+
+
+    const userCount =
+        document.getElementById("adminUserCount");
+
+
+    if (userCount) {
+
+        userCount.textContent =
+            users.length.toLocaleString("fa-IR");
+
+    }
+
+
+    const usersContainer =
+        document.getElementById("adminUsers");
+
+
+    if (usersContainer) {
+
+
+        if (!users.length) {
+
+            usersContainer.innerHTML = `
+
+                <div class="empty-state">
+
+                    <div class="empty-state-icon">
+                        👥
+                    </div>
+
+                    <h3>
+                        کاربری ثبت نشده است
+                    </h3>
+
+                    <p>
+                        کاربران ثبت‌نام‌شده در این قسمت نمایش داده می‌شوند.
+                    </p>
+
+                </div>
+
+            `;
+
+        } else {
+
+
+            usersContainer.innerHTML = `
+
+                <table class="admin-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                نام
+                            </th>
+
+                            <th>
+                                ایمیل
+                            </th>
+
+                            <th>
+                                شماره تماس
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        ${
+                            users.map(function (user) {
+
+                                return `
+
+                                    <tr>
+
+                                        <td>
+                                            ${user.name || "-"}
+                                        </td>
+
+                                        <td>
+                                            ${user.email || "-"}
+                                        </td>
+
+                                        <td>
+                                            ${user.phone || "-"}
+                                        </td>
+
+                                    </tr>
+
+                                `;
+
+                            }).join("")
+                        }
+
+                    </tbody>
+
+                </table>
+
+            `;
+
+        }
+
+    }
+
+
+
+    /* =================================================
+       MARKET DATA
+    ================================================= */
+
+    let marketData = {
+
+        gold18Price: "",
+        dollarPrice: ""
+
+    };
+
+
+    try {
+
+        const savedMarket =
+            JSON.parse(
+                localStorage.getItem("shailyMarketData")
+            );
+
+        if (savedMarket) {
+
+            marketData = {
+                ...marketData,
+                ...savedMarket
+            };
+
+        }
+
+    } catch (error) {
+
+        // استفاده از مقادیر پیش‌فرض
+    }
+
+
+    const goldInput =
+        document.getElementById("adminGoldPrice");
+
+
+    const dollarInput =
+        document.getElementById("adminDollarPrice");
+
+
+    if (goldInput) {
+
+        goldInput.value =
+            marketData.gold18Price || "";
+
+    }
+
+
+    if (dollarInput) {
+
+        dollarInput.value =
+            marketData.dollarPrice || "";
+
+    }
+
+
+    const marketMessage =
+        document.getElementById("adminMarketMessage");
+
+
+    function saveMarketData() {
+
+        localStorage.setItem(
+            "shailyMarketData",
+            JSON.stringify(marketData)
+        );
+
+
+        if (marketMessage) {
+
+            marketMessage.textContent =
+                "قیمت بازار با موفقیت ذخیره شد.";
+
+            marketMessage.classList.remove("error");
+
+            marketMessage.classList.add("success");
+
+        }
+
+
+        if (typeof renderMarketPrices === "function") {
+
+            renderMarketPrices();
+
+        }
+
+    }
+
+
+    const saveGoldButton =
+        document.getElementById("saveGoldPrice");
+
+
+    if (saveGoldButton) {
+
+        saveGoldButton.addEventListener(
+            "click",
+            function () {
+
+                const value =
+                    Number(goldInput.value);
+
+
+                if (!value || value < 0) {
+
+                    if (marketMessage) {
+
+                        marketMessage.textContent =
+                            "قیمت طلای ۱۸ عیار را به‌درستی وارد کنید.";
+
+                        marketMessage.classList.add("error");
+
+                    }
+
+                    return;
+
+                }
+
+
+                marketData.gold18Price = value;
+
+                localStorage.setItem(
+                    "shailyGold18Price",
+                    String(value)
+                );
+
+                saveMarketData();
+
+            }
+        );
+
+    }
+
+
+    const saveDollarButton =
+        document.getElementById("saveDollarPrice");
+
+
+    if (saveDollarButton) {
+
+        saveDollarButton.addEventListener(
+            "click",
+            function () {
+
+                const value =
+                    Number(dollarInput.value);
+
+
+                if (!value || value < 0) {
+
+                    if (marketMessage) {
+
+                        marketMessage.textContent =
+                            "قیمت دلار را به‌درستی وارد کنید.";
+
+                        marketMessage.classList.add("error");
+
+                    }
+
+                    return;
+
+                }
+
+
+                marketData.dollarPrice = value;
+
+                saveMarketData();
+
+            }
+        );
+
+    }
+
+});
+
+</script>
+
+
+</body>
+
+</html>

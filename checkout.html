@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="تکمیل سفارش در فروشگاه شایلی طلا و جواهرات."
+    >
+
+    <title>تکمیل سفارش | شایلی</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+
+<body data-checkout-page="true">
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header">
+
+    <div class="container header-inner">
+
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+
+            شایلی
+
+            <span>
+                طلا و جواهرات
+            </span>
+
+        </a>
+
+
+        <nav
+            class="main-nav"
+            data-main-nav
+        >
+
+            <a href="index.html">
+                خانه
+            </a>
+
+            <a href="shop.html">
+                فروشگاه
+            </a>
+
+            <a href="categories.html">
+                دسته‌بندی‌ها
+            </a>
+
+            <a href="about.html">
+                درباره ما
+            </a>
+
+            <a href="contact.html">
+                تماس با ما
+            </a>
+
+        </nav>
+
+
+        <div class="header-search">
+
+            <input
+                type="search"
+                placeholder="جستجوی محصول..."
+                data-search-input
+                aria-label="جستجوی محصول"
+            >
+
+            <button
+                type="button"
+                data-search-button
+                aria-label="جستجو"
+            >
+                🔍
+            </button>
+
+        </div>
+
+
+        <div class="header-actions">
+
+            <a
+                href="favorites.html"
+                class="header-action"
+                title="علاقه‌مندی‌ها"
+            >
+
+                ♡
+
+                <span
+                    class="action-count"
+                    data-favorite-count
+                >
+                    ۰
+                </span>
+
+            </a>
+
+
+            <a
+                href="account.html"
+                class="header-action"
+                data-account-link
+                title="حساب کاربری"
+            >
+                👤
+            </a>
+
+
+            <a
+                href="cart.html"
+                class="header-action active"
+                title="سبد خرید"
+            >
+
+                🛒
+
+                <span
+                    class="action-count"
+                    data-cart-count
+                >
+                    ۰
+                </span>
+
+            </a>
+
+
+            <button
+                type="button"
+                class="mobile-menu-button"
+                data-mobile-menu
+                aria-label="باز کردن منو"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     PAGE HEADER
+===================================================== -->
+
+<section class="page-header">
+
+    <div class="container">
+
+        <span class="section-subtitle">
+            آخرین مرحله
+        </span>
+
+        <h1>
+            تکمیل سفارش
+        </h1>
+
+        <p>
+            اطلاعات ارسال سفارش خود را وارد کنید.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CHECKOUT
+===================================================== -->
+
+<main>
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="checkout-layout">
+
+
+            <!-- =================================================
+                 CUSTOMER INFORMATION
+            ================================================= -->
+
+            <div class="checkout-form-section">
+
+                <div class="section-heading">
+
+                    <span class="section-subtitle">
+                        اطلاعات مشتری
+                    </span>
+
+                    <h2>
+                        اطلاعات ارسال
+                    </h2>
+
+                </div>
+
+
+                <div
+                    id="checkoutMessage"
+                    class="form-message"
+                    aria-live="polite"
+                ></div>
+
+
+                <form
+                    id="checkoutForm"
+                    class="checkout-form"
+                    novalidate
+                >
+
+
+                    <!-- نام -->
+
+                    <div class="form-group">
+
+                        <label for="checkoutName">
+                            نام و نام خانوادگی
+                        </label>
+
+                        <input
+                            type="text"
+                            id="checkoutName"
+                            name="name"
+                            placeholder="نام و نام خانوادگی"
+                            autocomplete="name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- ایمیل -->
+
+                    <div class="form-group">
+
+                        <label for="checkoutEmail">
+                            ایمیل
+                        </label>
+
+                        <input
+                            type="email"
+                            id="checkoutEmail"
+                            name="email"
+                            placeholder="example@email.com"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- تلفن -->
+
+                    <div class="form-group">
+
+                        <label for="checkoutPhone">
+                            شماره موبایل
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="checkoutPhone"
+                            name="phone"
+                            placeholder="09123456789"
+                            autocomplete="tel"
+                            inputmode="tel"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- استان -->
+
+                    <div class="form-group">
+
+                        <label for="checkoutProvince">
+                            استان
+                        </label>
+
+                        <input
+                            type="text"
+                            id="checkoutProvince"
+                            name="province"
+                            placeholder="مثلاً اصفهان"
+                            autocomplete="address-level1"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- شهر -->
+
+                    <div class="form-group">
+
+                        <label for="checkoutCity">
+                            شهر
+                        </label>
+
+                        <input
+                            type="text"
+                            id="checkoutCity"
+                            name="city"
+                            placeholder="مثلاً فلاورجان"
+                            autocomplete="address-level2"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- آدرس -->
+
+                    <div class="form-group form-group-full">
+
+                        <label for="checkoutAddress">
+                            آدرس کامل
+                        </label>
+
+                        <textarea
+                            id="checkoutAddress"
+                            name="address"
+                            rows="4"
+                            placeholder="استان، شهر، خیابان، کوچه، پلاک و واحد..."
+                            autocomplete="street-address"
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- کد پستی -->
+
+                    <div class="form-group">
+
+                        <label for="checkoutPostalCode">
+                            کد پستی
+                        </label>
+
+                        <input
+                            type="text"
+                            id="checkoutPostalCode"
+                            name="postalCode"
+                            placeholder="۱۰ رقم"
+                            inputmode="numeric"
+                            maxlength="10"
+                            autocomplete="postal-code"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- توضیحات -->
+
+                    <div class="form-group form-group-full">
+
+                        <label for="checkoutNotes">
+                            توضیحات سفارش
+                            <span>
+                                (اختیاری)
+                            </span>
+                        </label>
+
+                        <textarea
+                            id="checkoutNotes"
+                            name="notes"
+                            rows="4"
+                            placeholder="اگر نکته‌ای درباره ارسال سفارش دارید بنویسید..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- ثبت سفارش -->
+
+                    <div class="checkout-submit">
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary btn-full"
+                        >
+                            ثبت سفارش
+                        </button>
+
+                    </div>
+
+
+                </form>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 ORDER SUMMARY
+            ================================================= -->
+
+            <aside class="checkout-summary">
+
+                <div class="checkout-summary-card">
+
+                    <h2>
+                        خلاصه سفارش
+                    </h2>
+
+
+                    <!-- محصولات -->
+
+                    <div
+                        id="checkoutItems"
+                        class="checkout-items"
+                    >
+
+                        <p>
+                            در حال بارگذاری...
+                        </p>
+
+                    </div>
+
+
+                    <div class="summary-divider">
+                    </div>
+
+
+                    <!-- مبلغ کالاها -->
+
+                    <div class="summary-row">
+
+                        <span>
+                            مجموع محصولات
+                        </span>
+
+                        <strong id="checkoutSubtotal">
+                            ۰ تومان
+                        </strong>
+
+                    </div>
+
+
+                    <!-- ارسال -->
+
+                    <div class="summary-row">
+
+                        <span>
+                            هزینه ارسال
+                        </span>
+
+                        <strong id="checkoutShipping">
+                            رایگان
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-divider">
+                    </div>
+
+
+                    <!-- مبلغ نهایی -->
+
+                    <div class="summary-total">
+
+                        <span>
+                            مبلغ نهایی
+                        </span>
+
+                        <strong id="checkoutTotal">
+                            ۰ تومان
+                        </strong>
+
+                    </div>
+
+
+                    <p class="summary-note">
+
+                        پس از ثبت سفارش، اطلاعات سفارش
+                        برای پیگیری ذخیره می‌شود.
+
+                    </p>
+
+                </div>
+
+            </aside>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+
+        <div class="footer-column">
+
+            <h3>
+                شایلی
+            </h3>
+
+            <p>
+                فروشگاه آنلاین طلا و جواهرات
+                با طراحی مدرن و لوکس.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                دسترسی سریع
+            </h3>
+
+            <a href="index.html">
+                خانه
+            </a>
+
+            <a href="shop.html">
+                فروشگاه
+            </a>
+
+            <a href="categories.html">
+                دسته‌بندی‌ها
+            </a>
+
+            <a href="about.html">
+                درباره ما
+            </a>
+
+            <a href="contact.html">
+                تماس با ما
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                پشتیبانی
+            </h3>
+
+            <a href="rules.html">
+                قوانین و مقررات
+            </a>
+
+            <a href="faq.html">
+                سوالات متداول
+            </a>
+
+            <a href="orders.html">
+                پیگیری سفارش
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                تماس با ما
+            </h3>
+
+            <p>
+                📞 09920229942
+            </p>
+
+            <p>
+                ✉️ amir.sepahan13900321@gmail.com
+            </p>
+
+            <p>
+                📍 فلاورجان
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            ©
+            <span data-current-year>
+                ۱۴۰۵
+            </span>
+            شایلی طلا و جواهرات
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     SCRIPTS
+===================================================== -->
+
+<script src="js/products.js"></script>
+
+<script src="js/cart.js"></script>
+
+<script src="js/favorites.js"></script>
+
+<script src="js/auth.js"></script>
+
+<script src="js/checkout.js"></script>
+
+<script src="js/api.js"></script>
+
+<script src="js/script.js"></script>
+
+
+</body>
+
+</html>

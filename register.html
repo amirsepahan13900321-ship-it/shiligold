@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="ایجاد حساب کاربری در فروشگاه شایلی طلا و جواهرات."
+    >
+
+    <title>ثبت نام | شایلی</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header">
+
+    <div class="container header-inner">
+
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+            شایلی
+
+            <span>
+                طلا و جواهرات
+            </span>
+        </a>
+
+
+        <nav
+            class="main-nav"
+            data-main-nav
+        >
+
+            <a href="index.html">
+                خانه
+            </a>
+
+            <a href="shop.html">
+                فروشگاه
+            </a>
+
+            <a href="categories.html">
+                دسته‌بندی‌ها
+            </a>
+
+            <a href="about.html">
+                درباره ما
+            </a>
+
+            <a href="contact.html">
+                تماس با ما
+            </a>
+
+        </nav>
+
+
+        <div class="header-search">
+
+            <input
+                type="search"
+                placeholder="جستجوی محصول..."
+                data-search-input
+                aria-label="جستجوی محصول"
+            >
+
+            <button
+                type="button"
+                data-search-button
+                aria-label="جستجو"
+            >
+                🔍
+            </button>
+
+        </div>
+
+
+        <div class="header-actions">
+
+            <a
+                href="favorites.html"
+                class="header-action"
+                title="علاقه‌مندی‌ها"
+            >
+
+                ♡
+
+                <span
+                    class="action-count"
+                    data-favorite-count
+                >
+                    ۰
+                </span>
+
+            </a>
+
+
+            <a
+                href="login.html"
+                class="header-action active"
+                title="حساب کاربری"
+            >
+                👤
+            </a>
+
+
+            <a
+                href="cart.html"
+                class="header-action"
+                title="سبد خرید"
+            >
+
+                🛒
+
+                <span
+                    class="action-count"
+                    data-cart-count
+                >
+                    ۰
+                </span>
+
+            </a>
+
+
+            <button
+                type="button"
+                class="mobile-menu-button"
+                data-mobile-menu
+                aria-label="باز کردن منو"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     PAGE HEADER
+===================================================== -->
+
+<section class="page-header">
+
+    <div class="container">
+
+        <span class="section-subtitle">
+            حساب کاربری
+        </span>
+
+        <h1>
+            ایجاد حساب
+        </h1>
+
+        <p>
+            برای استفاده از امکانات فروشگاه ثبت نام کنید.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     REGISTER
+===================================================== -->
+
+<main>
+
+<section class="section auth-section">
+
+    <div class="container">
+
+        <div class="auth-container">
+
+            <div class="auth-card">
+
+
+                <div class="auth-card-header">
+
+                    <div class="auth-icon">
+                        ✨
+                    </div>
+
+                    <h2>
+                        ثبت نام در شایلی
+                    </h2>
+
+                    <p>
+                        اطلاعات خود را وارد کنید.
+                    </p>
+
+                </div>
+
+
+                <!-- پیام -->
+
+                <div
+                    id="authMessage"
+                    class="form-message"
+                    aria-live="polite"
+                ></div>
+
+
+                <!-- فرم ثبت نام -->
+
+                <form
+                    id="registerForm"
+                    class="auth-form"
+                    novalidate
+                >
+
+
+                    <!-- نام -->
+
+                    <div class="form-group">
+
+                        <label for="registerName">
+                            نام و نام خانوادگی
+                        </label>
+
+                        <input
+                            type="text"
+                            id="registerName"
+                            name="name"
+                            placeholder="نام و نام خانوادگی"
+                            autocomplete="name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- ایمیل -->
+
+                    <div class="form-group">
+
+                        <label for="registerEmail">
+                            ایمیل
+                        </label>
+
+                        <input
+                            type="email"
+                            id="registerEmail"
+                            name="email"
+                            placeholder="example@email.com"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- شماره تلفن -->
+
+                    <div class="form-group">
+
+                        <label for="registerPhone">
+                            شماره موبایل
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="registerPhone"
+                            name="phone"
+                            placeholder="09123456789"
+                            autocomplete="tel"
+                            inputmode="tel"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- رمز عبور -->
+
+                    <div class="form-group">
+
+                        <label for="registerPassword">
+                            رمز عبور
+                        </label>
+
+                        <input
+                            type="password"
+                            id="registerPassword"
+                            name="password"
+                            placeholder="حداقل ۶ کاراکتر"
+                            autocomplete="new-password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- تکرار رمز -->
+
+                    <div class="form-group">
+
+                        <label for="registerConfirmPassword">
+                            تکرار رمز عبور
+                        </label>
+
+                        <input
+                            type="password"
+                            id="registerConfirmPassword"
+                            name="confirmPassword"
+                            placeholder="رمز عبور را دوباره وارد کنید"
+                            autocomplete="new-password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- ثبت نام -->
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary btn-full"
+                    >
+                        ایجاد حساب
+                    </button>
+
+
+                </form>
+
+
+                <!-- ورود -->
+
+                <div class="auth-footer">
+
+                    <p>
+                        قبلاً حساب ساخته‌اید؟
+                    </p>
+
+                    <a
+                        href="login.html"
+                        class="btn btn-outline"
+                    >
+                        ورود به حساب
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+
+        <div class="footer-column">
+
+            <h3>
+                شایلی
+            </h3>
+
+            <p>
+                فروشگاه آنلاین طلا و جواهرات
+                با طراحی مدرن و لوکس.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                دسترسی سریع
+            </h3>
+
+            <a href="index.html">
+                خانه
+            </a>
+
+            <a href="shop.html">
+                فروشگاه
+            </a>
+
+            <a href="categories.html">
+                دسته‌بندی‌ها
+            </a>
+
+            <a href="about.html">
+                درباره ما
+            </a>
+
+            <a href="contact.html">
+                تماس با ما
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                پشتیبانی
+            </h3>
+
+            <a href="rules.html">
+                قوانین و مقررات
+            </a>
+
+            <a href="faq.html">
+                سوالات متداول
+            </a>
+
+            <a href="orders.html">
+                پیگیری سفارش
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                تماس با ما
+            </h3>
+
+            <p>
+                📞 09920229942
+            </p>
+
+            <p>
+                ✉️ amir.sepahan13900321@gmail.com
+            </p>
+
+            <p>
+                📍 فلاورجان
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            ©
+            <span data-current-year>
+                ۱۴۰۵
+            </span>
+            شایلی طلا و جواهرات
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     SCRIPTS
+===================================================== -->
+
+<script src="js/products.js"></script>
+
+<script src="js/cart.js"></script>
+
+<script src="js/favorites.js"></script>
+
+<script src="js/auth.js"></script>
+
+<script src="js/api.js"></script>
+
+<script src="js/script.js"></script>
+
+
+</body>
+
+</html>

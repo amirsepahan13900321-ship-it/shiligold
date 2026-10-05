@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="فروشگاه آنلاین شایلی؛ خرید انواع طلا و جواهرات با طراحی لوکس و مدرن."
+    >
+
+    <title>فروشگاه | شایلی طلا و جواهرات</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/responsive.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header">
+
+    <div class="container header-inner">
+
+
+        <!-- لوگو -->
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+
+            شایلی
+
+            <span>
+                طلا و جواهرات
+            </span>
+
+        </a>
+
+
+        <!-- منوی اصلی -->
+
+        <nav
+            class="main-nav"
+            data-main-nav
+        >
+
+            <a href="index.html">
+                خانه
+            </a>
+
+            <a
+                href="shop.html"
+                class="active"
+            >
+                فروشگاه
+            </a>
+
+            <a href="categories.html">
+                دسته‌بندی‌ها
+            </a>
+
+            <a href="about.html">
+                درباره ما
+            </a>
+
+            <a href="contact.html">
+                تماس با ما
+            </a>
+
+        </nav>
+
+
+        <!-- جستجوی هدر -->
+
+        <div class="header-search">
+
+            <input
+                type="search"
+                placeholder="جستجوی محصول..."
+                data-search-input
+                aria-label="جستجوی محصول"
+            >
+
+            <button
+                type="button"
+                data-search-button
+                aria-label="جستجو"
+            >
+                🔍
+            </button>
+
+        </div>
+
+
+        <!-- عملیات -->
+
+        <div class="header-actions">
+
+
+            <!-- علاقه‌مندی -->
+
+            <a
+                href="favorites.html"
+                class="header-action"
+                title="علاقه‌مندی‌ها"
+            >
+
+                ♡
+
+                <span
+                    class="action-count"
+                    data-favorite-count
+                >
+                    ۰
+                </span>
+
+            </a>
+
+
+            <!-- حساب کاربری -->
+
+            <a
+                href="account.html"
+                class="header-action"
+                data-account-link
+                title="حساب کاربری"
+            >
+
+                👤
+
+            </a>
+
+
+            <!-- سبد خرید -->
+
+            <a
+                href="cart.html"
+                class="header-action"
+                title="سبد خرید"
+            >
+
+                🛒
+
+                <span
+                    class="action-count"
+                    data-cart-count
+                >
+                    ۰
+                </span>
+
+            </a>
+
+
+            <!-- منوی موبایل -->
+
+            <button
+                type="button"
+                class="mobile-menu-button"
+                data-mobile-menu
+                aria-label="باز کردن منو"
+            >
+
+                ☰
+
+            </button>
+
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     PAGE HEADER
+===================================================== -->
+
+<section class="page-header">
+
+    <div class="container">
+
+        <span class="section-subtitle">
+            مجموعه شایلی
+        </span>
+
+        <h1>
+            فروشگاه طلا و جواهرات
+        </h1>
+
+        <p>
+            مجموعه‌ای از انگشتر، پابند، گردنبند،
+            دستبند، گوشواره، ست طلا و ساعت را مشاهده کنید.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SHOP
+===================================================== -->
+
+<main>
+
+<section class="section shop-section">
+
+    <div class="container">
+
+
+        <!-- =================================================
+             SHOP TOOLBAR
+        ================================================== -->
+
+        <div class="shop-toolbar">
+
+
+            <!-- جستجو -->
+
+            <div class="shop-search">
+
+                <label for="shopSearch">
+                    جستجوی محصول
+                </label>
+
+                <input
+                    type="search"
+                    id="shopSearch"
+                    placeholder="نام محصول را وارد کنید..."
+                >
+
+            </div>
+
+
+            <!-- دسته‌بندی -->
+
+            <div class="shop-filter">
+
+                <label for="categoryFilter">
+                    دسته‌بندی
+                </label>
+
+                <select id="categoryFilter">
+
+                    <option value="">
+                        همه دسته‌بندی‌ها
+                    </option>
+
+                    <option value="ring">
+                        انگشتر
+                    </option>
+
+                    <option value="anklet">
+                        پابند
+                    </option>
+
+                    <option value="bracelet">
+                        دستبند
+                    </option>
+
+                    <option value="necklace">
+                        گردنبند
+                    </option>
+
+                    <option value="earring">
+                        گوشواره
+                    </option>
+
+                    <option value="set">
+                        ست طلا
+                    </option>
+
+                    <option value="watch">
+                        ساعت طلا
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- حداقل قیمت -->
+
+            <div class="shop-filter">
+
+                <label for="minPrice">
+                    حداقل قیمت
+                </label>
+
+                <input
+                    type="number"
+                    id="minPrice"
+                    min="0"
+                    placeholder="تومان"
+                >
+
+            </div>
+
+
+            <!-- حداکثر قیمت -->
+
+            <div class="shop-filter">
+
+                <label for="maxPrice">
+                    حداکثر قیمت
+                </label>
+
+                <input
+                    type="number"
+                    id="maxPrice"
+                    min="0"
+                    placeholder="تومان"
+                >
+
+            </div>
+
+
+            <!-- مرتب‌سازی -->
+
+            <div class="shop-filter">
+
+                <label for="sortProducts">
+                    مرتب‌سازی
+                </label>
+
+                <select id="sortProducts">
+
+                    <option value="default">
+                        پیش‌فرض
+                    </option>
+
+                    <option value="price-low">
+                        ارزان‌ترین
+                    </option>
+
+                    <option value="price-high">
+                        گران‌ترین
+                    </option>
+
+                    <option value="weight-low">
+                        کمترین وزن
+                    </option>
+
+                    <option value="weight-high">
+                        بیشترین وزن
+                    </option>
+
+                    <option value="newest">
+                        جدیدترین
+                    </option>
+
+                </select>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             RESULT BAR
+        ================================================== -->
+
+        <div class="shop-result-bar">
+
+            <span id="shopResultCount">
+                در حال بارگذاری...
+            </span>
+
+            <button
+                type="button"
+                id="clearFilters"
+                class="btn btn-outline"
+            >
+                پاک کردن فیلترها
+            </button>
+
+        </div>
+
+
+
+        <!-- =================================================
+             PRODUCTS
+        ================================================== -->
+
+        <div
+            class="products-grid"
+            id="shopProducts"
+        >
+
+            <div class="empty-state">
+
+                <h3>
+                    در حال بارگذاری محصولات...
+                </h3>
+
+                <p>
+                    لطفاً کمی صبر کنید.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+
+        <!-- معرفی -->
+
+        <div class="footer-column">
+
+            <h3>
+                شایلی
+            </h3>
+
+            <p>
+                فروشگاه آنلاین طلا و جواهرات
+                با طراحی مدرن و لوکس.
+            </p>
+
+        </div>
+
+
+        <!-- دسترسی سریع -->
+
+        <div class="footer-column">
+
+            <h3>
+                دسترسی سریع
+            </h3>
+
+            <a href="index.html">
+                خانه
+            </a>
+
+            <a href="shop.html">
+                فروشگاه
+            </a>
+
+            <a href="categories.html">
+                دسته‌بندی‌ها
+            </a>
+
+            <a href="about.html">
+                درباره ما
+            </a>
+
+            <a href="contact.html">
+                تماس با ما
+            </a>
+
+        </div>
+
+
+        <!-- پشتیبانی -->
+
+        <div class="footer-column">
+
+            <h3>
+                پشتیبانی
+            </h3>
+
+            <a href="rules.html">
+                قوانین و مقررات
+            </a>
+
+            <a href="faq.html">
+                سوالات متداول
+            </a>
+
+            <a href="orders.html">
+                پیگیری سفارش
+            </a>
+
+        </div>
+
+
+        <!-- تماس -->
+
+        <div class="footer-column">
+
+            <h3>
+                تماس با ما
+            </h3>
+
+            <p>
+                📞 09920229942
+            </p>
+
+            <p>
+                ✉️ amir.sepahan13900321@gmail.com
+            </p>
+
+            <p>
+                📍 فلاورجان
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- پایین فوتر -->
+
+    <div class="footer-bottom">
+
+        <p>
+
+            ©
+
+            <span data-current-year>
+                ۱۴۰۵
+            </span>
+
+            شایلی طلا و جواهرات
+
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     SCRIPTS
+===================================================== -->
+
+<script src="js/products.js"></script>
+
+<script src="js/cart.js"></script>
+
+<script src="js/favorites.js"></script>
+
+<script src="js/auth.js"></script>
+
+<script src="js/api.js"></script>
+
+<script src="js/script.js"></script>
+
+
+
+<!-- =====================================================
+     SHOP SCRIPT
+===================================================== -->
+
+<script>
+
+document.addEventListener(
+    "DOMContentLoaded",
+    () => {
+
+
+        /* =================================================
+           ELEMENTS
+        ================================================== */
+
+        const productsContainer =
+            document.getElementById(
+                "shopProducts"
+            );
+
+
+        const searchInput =
+            document.getElementById(
+                "shopSearch"
+            );
+
+
+        const categoryFilter =
+            document.getElementById(
+                "categoryFilter"
+            );
+
+
+        const minPriceInput =
+            document.getElementById(
+                "minPrice"
+            );
+
+
+        const maxPriceInput =
+            document.getElementById(
+                "maxPrice"
+            );
+
+
+        const sortSelect =
+            document.getElementById(
+                "sortProducts"
+            );
+
+
+        const resultCount =
+            document.getElementById(
+                "shopResultCount"
+            );
+
+
+        const clearButton =
+            document.getElementById(
+                "clearFilters"
+            );
+
+
+
+        /* =================================================
+           UPDATE SHOP
+        ================================================== */
+
+        function updateShop() {
+
+
+            /* بررسی محصولات */
+
+            if (
+                typeof SHAILY_PRODUCTS ===
+                "undefined"
+            ) {
+
+                productsContainer.innerHTML = `
+
+                    <div class="empty-state">
+
+                        <h3>
+                            خطا در بارگذاری محصولات
+                        </h3>
+
+                        <p>
+                            فایل products.js پیدا نشد.
+                        </p>
+
+                    </div>
+
+                `;
+
+                resultCount.textContent =
+                    "خطا";
+
+                return;
+
+            }
+
+
+            /* کپی محصولات */
+
+            let products = [
+                ...SHAILY_PRODUCTS
+            ];
+
+
+
+            /* =================================================
+               SEARCH
+            ================================================== */
+
+            const search =
+                searchInput.value
+                    .trim()
+                    .toLowerCase();
+
+
+            if (search) {
+
+                products =
+                    products.filter(
+                        product =>
+
+                            product.name
+                                .toLowerCase()
+                                .includes(search)
+
+                            ||
+
+                            product.description
+                                .toLowerCase()
+                                .includes(search)
+
+                            ||
+
+                            product.categoryName
+                                .toLowerCase()
+                                .includes(search)
+                    );
+
+            }
+
+
+
+            /* =================================================
+               CATEGORY
+            ================================================== */
+
+            const category =
+                categoryFilter.value;
+
+
+            if (category) {
+
+                products =
+                    products.filter(
+                        product =>
+                            product.category ===
+                            category
+                    );
+
+            }
+
+
+
+            /* =================================================
+               MIN PRICE
+            ================================================== */
+
+            const minPrice =
+                Number(
+                    minPriceInput.value
+                ) || 0;
+
+
+            if (minPrice > 0) {
+
+                products =
+                    products.filter(
+                        product =>
+
+                            calculateProductPrice(
+                                product
+                            ) >= minPrice
+
+                    );
+
+            }
+
+
+
+            /* =================================================
+               MAX PRICE
+            ================================================== */
+
+            const maxPrice =
+                Number(
+                    maxPriceInput.value
+                ) || 0;
+
+
+            if (maxPrice > 0) {
+
+                products =
+                    products.filter(
+                        product =>
+
+                            calculateProductPrice(
+                                product
+                            ) <= maxPrice
+
+                    );
+
+            }
+
+
+
+            /* =================================================
+               SORT
+            ================================================== */
+
+            const sort =
+                sortSelect.value;
+
+
+            if (
+                sort === "price-low"
+            ) {
+
+                products.sort(
+                    (a, b) =>
+
+                        calculateProductPrice(a) -
+                        calculateProductPrice(b)
+
+                );
+
+            }
+
+
+            else if (
+                sort === "price-high"
+            ) {
+
+                products.sort(
+                    (a, b) =>
+
+                        calculateProductPrice(b) -
+                        calculateProductPrice(a)
+
+                );
+
+            }
+
+
+            else if (
+                sort === "weight-low"
+            ) {
+
+                products.sort(
+                    (a, b) =>
+
+                        Number(a.weight) -
+                        Number(b.weight)
+
+                );
+
+            }
+
+
+            else if (
+                sort === "weight-high"
+            ) {
+
+                products.sort(
+                    (a, b) =>
+
+                        Number(b.weight) -
+                        Number(a.weight)
+
+                );
+
+            }
+
+
+            else if (
+                sort === "newest"
+            ) {
+
+                products.sort(
+                    (a, b) =>
+
+                        Number(b.isNew) -
+                        Number(a.isNew)
+
+                );
+
+            }
+
+
+
+            /* =================================================
+               RESULT COUNT
+            ================================================== */
+
+            resultCount.textContent =
+
+                `${new Intl.NumberFormat(
+                    "fa-IR"
+                ).format(
+                    products.length
+                )} محصول`;
+
+
+
+            /* =================================================
+               RENDER
+            ================================================== */
+
+            if (
+                typeof renderProducts ===
+                "function"
+            ) {
+
+                /*
+                   نکته مهم:
+                   ترتیب صحیح:
+                   renderProducts(container, products)
+                */
+
+                renderProducts(
+                    productsContainer,
+                    products
+                );
+
+            }
+
+
+        }
+
+
+
+        /* =================================================
+           SEARCH EVENT
+        ================================================== */
+
+        searchInput.addEventListener(
+            "input",
+            updateShop
+        );
+
+
+
+        /* =================================================
+           CATEGORY EVENT
+        ================================================== */
+
+        categoryFilter.addEventListener(
+            "change",
+            updateShop
+        );
+
+
+
+        /* =================================================
+           MIN PRICE EVENT
+        ================================================== */
+
+        minPriceInput.addEventListener(
+            "input",
+            updateShop
+        );
+
+
+
+        /* =================================================
+           MAX PRICE EVENT
+        ================================================== */
+
+        maxPriceInput.addEventListener(
+            "input",
+            updateShop
+        );
+
+
+
+        /* =================================================
+           SORT EVENT
+        ================================================== */
+
+        sortSelect.addEventListener(
+            "change",
+            updateShop
+        );
+
+
+
+        /* =================================================
+           CLEAR FILTERS
+        ================================================== */
+
+        clearButton.addEventListener(
+            "click",
+            () => {
+
+
+                searchInput.value =
+                    "";
+
+
+                categoryFilter.value =
+                    "";
+
+
+                minPriceInput.value =
+                    "";
+
+
+                maxPriceInput.value =
+                    "";
+
+
+                sortSelect.value =
+                    "default";
+
+
+                updateShop();
+
+            }
+        );
+
+
+
+        /* =================================================
+           URL CATEGORY
+           مثال:
+           shop.html?category=ring
+        ================================================== */
+
+        const urlParams =
+            new URLSearchParams(
+                window.location.search
+            );
+
+
+        const urlCategory =
+            urlParams.get(
+                "category"
+            );
+
+
+        if (
+            urlCategory &&
+            [
+                "ring",
+                "anklet",
+                "bracelet",
+                "necklace",
+                "earring",
+                "set",
+                "watch"
+            ].includes(
+                urlCategory
+            )
+        ) {
+
+            categoryFilter.value =
+                urlCategory;
+
+        }
+
+
+
+        /* =================================================
+           INITIAL LOAD
+        ================================================== */
+
+        updateShop();
+
+
+    }
+);
+
+</script>
+
+
+</body>
+
+</html>
