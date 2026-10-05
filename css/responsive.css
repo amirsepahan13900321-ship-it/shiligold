@@ -1,0 +1,722 @@
+/* =========================================================
+   SHAILY GOLD
+   RESPONSIVE STYLE
+========================================================= */
+
+
+/* =========================================================
+   TABLET
+   992px
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .main-navigation {
+        gap: 16px;
+    }
+
+    .nav-link {
+        font-size: 13px;
+    }
+
+    .header-actions {
+        gap: 5px;
+    }
+
+    .header-action {
+        width: 37px;
+        height: 37px;
+    }
+
+
+    /* Hero */
+
+    .hero-section {
+        min-height: 560px;
+    }
+
+    .hero-content h1 {
+        font-size: 52px;
+    }
+
+
+    /* Categories */
+
+    .categories-grid {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+
+    /* Products */
+
+    .products-grid {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+
+    /* Benefits */
+
+    .benefits-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    /* Calculator */
+
+    .calculator-wrapper {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    /* Footer */
+
+    .footer-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .section-container,
+    .header-container,
+    .footer-container {
+
+        width:
+            min(
+                calc(100% - 28px),
+                1200px
+            );
+    }
+
+
+    /* Header */
+
+    .site-header {
+        position: sticky;
+        top: 0;
+    }
+
+    .header-container {
+        min-height: 68px;
+    }
+
+    .main-navigation {
+        display: none;
+    }
+
+    .header-actions {
+        margin-right: auto;
+    }
+
+    .header-action {
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+    }
+
+    .mobile-menu-button {
+        display: grid;
+        place-items: center;
+    }
+
+
+    /* Mobile navigation */
+
+    .mobile-navigation {
+        top: 68px;
+    }
+
+
+    /* Hero */
+
+    .hero-section {
+        min-height: 540px;
+
+        background-position:
+            center;
+    }
+
+    .hero-content {
+        padding:
+            80px 0;
+    }
+
+    .hero-content h1 {
+        font-size:
+            clamp(
+                34px,
+                10vw,
+                50px
+            );
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        max-width: 320px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+
+    /* Sections */
+
+    .gold-market-section,
+    .categories-section,
+    .products-section,
+    .benefits-section,
+    .faq-section {
+        padding:
+            70px 0;
+    }
+
+    .calculator-section,
+    .contact-cta {
+        padding:
+            75px 0;
+    }
+
+
+    /* Section headings */
+
+    .section-heading {
+        margin-bottom: 30px;
+    }
+
+    .section-heading-row {
+        align-items: flex-start;
+        flex-direction: column;
+        text-align: right;
+    }
+
+
+    /* Gold market */
+
+    .gold-market-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    /* Categories */
+
+    .categories-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .category-card {
+        min-height: 165px;
+    }
+
+
+    /* Products */
+
+    .products-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 12px;
+    }
+
+    .product-info {
+        padding: 13px;
+    }
+
+    .product-name {
+        font-size: 14px;
+    }
+
+    .product-price {
+        font-size: 14px;
+    }
+
+
+    /* Calculator */
+
+    .gold-calculator {
+        grid-template-columns:
+            1fr;
+
+        padding: 20px;
+    }
+
+    .calculator-button,
+    .calculator-result {
+        grid-column:
+            auto;
+    }
+
+
+    /* Benefits */
+
+    .benefits-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    /* Footer */
+
+    .footer-container {
+        grid-template-columns:
+            1fr 1fr;
+
+        gap: 30px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .section-container,
+    .header-container,
+    .footer-container {
+
+        width:
+            calc(100% - 22px);
+    }
+
+
+    /* Header */
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .logo-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .header-actions {
+        gap: 3px;
+    }
+
+    .header-action {
+        width: 33px;
+        height: 33px;
+        font-size: 13px;
+    }
+
+    .action-count {
+        min-width: 16px;
+        height: 16px;
+        font-size: 9px;
+    }
+
+
+    /* Hero */
+
+    .hero-section {
+        min-height: 510px;
+    }
+
+    .hero-content {
+        padding:
+            70px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+    .hero-content p {
+        font-size: 13px;
+    }
+
+
+    /* Categories */
+
+    .categories-grid {
+        grid-template-columns:
+            1fr 1fr;
+
+        gap: 10px;
+    }
+
+    .category-card {
+        min-height: 145px;
+        padding: 15px 10px;
+    }
+
+    .category-icon {
+        width: 52px;
+        height: 52px;
+        font-size: 22px;
+    }
+
+    .category-card h3 {
+        font-size: 14px;
+    }
+
+
+    /* Products */
+
+    .products-grid {
+        grid-template-columns:
+            1fr 1fr;
+
+        gap: 9px;
+    }
+
+    .product-actions {
+        flex-direction: column;
+    }
+
+    .product-actions button,
+    .product-actions a {
+        width: 100%;
+    }
+
+
+    /* Market */
+
+    .market-card {
+        padding: 22px;
+    }
+
+    .market-price {
+        font-size: 22px;
+    }
+
+
+    /* Calculator */
+
+    .gold-calculator {
+        padding: 16px;
+    }
+
+
+    /* Footer */
+
+    .footer-container {
+        grid-template-columns:
+            1fr;
+    }
+
+    .footer-column {
+        align-items: flex-start;
+    }
+
+    .footer-bottom {
+        padding:
+            18px 10px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL SCREENS
+   360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .header-action {
+        width: 30px;
+        height: 30px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .logo-icon {
+        width: 29px;
+        height: 29px;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .categories-grid,
+    .products-grid {
+        grid-template-columns:
+            1fr;
+    }
+}
+/* =========================================================
+   SHAYLI GOLD
+   RESPONSIVE EXTRA STYLES
+========================================================= */
+
+
+/* =========================================================
+   LARGE TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .admin-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .admin-quick-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .header-inner {
+        gap: 15px;
+    }
+
+    .header-search {
+        max-width: 230px;
+    }
+
+    .main-nav {
+        gap: 15px;
+    }
+
+    .page-header {
+        padding: 65px 0 55px;
+    }
+
+    .page-header h1 {
+        font-size: 36px;
+    }
+
+    .admin-market-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .header {
+        position: sticky;
+        top: 0;
+    }
+
+    .header-inner {
+        min-height: 70px;
+    }
+
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        width: 100%;
+        padding: 18px;
+        background: var(--bg-secondary);
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+        flex-direction: column;
+        gap: 4px;
+        z-index: 1000;
+    }
+
+    .main-nav.active {
+        display: flex;
+    }
+
+    .main-nav a {
+        width: 100%;
+        padding: 13px 15px;
+        border-radius: 8px;
+    }
+
+    .header-search {
+        display: none;
+    }
+
+    .mobile-menu-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page-header {
+        padding: 55px 0 45px;
+    }
+
+    .page-header h1 {
+        font-size: 32px;
+    }
+
+    .page-header p {
+        font-size: 14px;
+    }
+
+    .admin-section {
+        padding: 22px;
+    }
+
+    .admin-section-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .admin-section-header .btn {
+        width: 100%;
+    }
+
+    .cta-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 576px) {
+
+    .container {
+        width: 94%;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .logo span {
+        font-size: 9px;
+    }
+
+    .header-actions {
+        gap: 6px;
+    }
+
+    .header-action {
+        width: 38px;
+        height: 38px;
+    }
+
+    .admin-stats {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .admin-stat-card {
+        padding: 18px;
+    }
+
+    .admin-stat-card strong {
+        font-size: 19px;
+    }
+
+    .admin-quick-links {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-market-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-market-card {
+        padding: 20px;
+    }
+
+    .faq-list {
+        margin-top: 25px;
+    }
+
+    .faq-item summary {
+        font-size: 14px;
+        padding: 18px 18px 18px 48px;
+    }
+
+    .faq-answer {
+        font-size: 14px;
+        padding: 0 18px 18px;
+    }
+
+    .cta-section {
+        padding: 25px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .header-inner {
+        min-height: 62px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .header-action {
+        width: 34px;
+        height: 34px;
+        font-size: 15px;
+    }
+
+    .page-header {
+        padding: 45px 0 35px;
+    }
+
+    .page-header h1 {
+        font-size: 26px;
+    }
+
+    .admin-section {
+        padding: 16px;
+    }
+
+    .admin-stat-card {
+        padding: 15px;
+    }
+
+    .admin-stat-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+}
